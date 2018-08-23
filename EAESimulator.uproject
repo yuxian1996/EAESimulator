@@ -9,7 +9,11 @@
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
+<<<<<<< HEAD
 				"UMG"
+=======
+				"Engine"
+>>>>>>> 46a5a14ac9709b7171aa9d56573ae223030043a0
 			]
 		}
 	]
