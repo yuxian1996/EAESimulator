@@ -3,22 +3,15 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Person/Person.h"
 #include <string>
-
 using namespace std;
-
 /**
  * 
  */
-class EAESIMULATOR_API Person
+class EAESIMULATOR_API Stuff : public Person
 {
 public:
-	Person();
-	~Person();
-
-protected:
-
-	string m_Name;
-	string m_IconPath;
-	
+	Stuff();
+	~Stuff();
 };
