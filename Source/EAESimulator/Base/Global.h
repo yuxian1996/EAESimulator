@@ -1,15 +1,7 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// global includes, macros, and functions
 
 #pragma once
 
 #include "CoreMinimal.h"
 
-/**
- * 
- */
-class EAESIMULATOR_API Global
-{
-public:
-	Global();
-	~Global();
-};
+#define DataMgr DataManager::Instance()

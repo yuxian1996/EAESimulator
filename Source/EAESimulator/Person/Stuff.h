@@ -14,4 +14,10 @@ class EAESIMULATOR_API Stuff : public Person
 public:
 	Stuff();
 	~Stuff();
+
+	inline int  GetAbility() { return m_Ability; }
+	inline void SetAbility(int i_Ability) { m_Ability = i_Ability; }
+
+private:
+	int m_Ability;
 };

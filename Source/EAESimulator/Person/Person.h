@@ -10,17 +10,31 @@ using namespace std;
 /**
  * 
  */
+struct Capacity
+{
+	int Product;
+	int Program;
+	int Art;
+	int TechArt;
+};
+
 class EAESIMULATOR_API Person
 {
 public:
 	Person();
 	~Person();
 
-private:
-	//shit
-protected:
+	inline string		GetName() { return m_Name; }
+	inline void			SetName(const string & i_Name) { m_Name = i_Name; }
 
-	string m_Name;
-	string m_IconPath;
+	inline Capacity&	GetCapacity() { return m_Capacity; }
+
+protected:
+	string   m_Name;
+	Capacity m_Capacity;
+
+private:
+
+
 	
 };

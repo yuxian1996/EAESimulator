@@ -3,13 +3,33 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include <memory>
+#include "Tools/Singleton.h"
+using namespace std;
 
 /**
  * 
  */
-class EAESIMULATOR_API DataManager
+
+struct CoreValues
+{
+	int Money;
+	int Happiness;
+	int Development;
+	int Reputation;
+};
+
+class EAESIMULATOR_API DataManager : public Singleton<DataManager>
 {
 public:
 	DataManager();
 	~DataManager();
+	//static DataManager* Inctance();
+
+	inline CoreValues& GetCoreValues() { return m_CoreValues; }
+
+private:
+
+	CoreValues m_CoreValues;
+	//static unique_ptr<DataManager> m_Instance;
 };
