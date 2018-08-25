@@ -4,13 +4,12 @@
 
 #include "CoreMinimal.h"
 
-
 /**
  * 
  */
-class EAESIMULATOR_API EaeGame
+class EAESIMULATOR_API EaeLab
 {
 public:
-	EaeGame();
-	~EaeGame();
+	EaeLab();
+	~EaeLab();
 };
