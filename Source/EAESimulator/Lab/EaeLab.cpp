@@ -1,13 +1,11 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "DataManager.h"
+#include "EaeLab.h"
 
-
-
-DataManager::DataManager()
+EaeLab::EaeLab()
 {
 }
 
-DataManager::~DataManager()
+EaeLab::~EaeLab()
 {
 }

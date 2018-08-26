@@ -9,3 +9,7 @@ Calendar::Calendar()
 Calendar::~Calendar()
 {
 }
+
+void Calendar::Update()
+{
+}

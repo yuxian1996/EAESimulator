@@ -1,13 +1,11 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "DataManager.h"
+#include "HumanManager.h"
 
-
-
-DataManager::DataManager()
+HumanManager::HumanManager()
 {
 }
 
-DataManager::~DataManager()
+HumanManager::~HumanManager()
 {
 }
