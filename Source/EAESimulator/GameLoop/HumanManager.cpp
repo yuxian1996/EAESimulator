@@ -2,7 +2,7 @@
 
 #include "HumanManager.h"
 
-HumanManager::HumanManager()
+UHumanManager::UHumanManager()
 {
 	Student* s = new Student();
 	m_StudentGroup.Add(s);
@@ -14,10 +14,10 @@ HumanManager::HumanManager()
 	m_StuffGroup.Add(sf);
 }
 
-HumanManager::~HumanManager()
+UHumanManager::~UHumanManager()
 {
 }
 
-void HumanManager::Update()
+void UHumanManager::Update()
 {
 }

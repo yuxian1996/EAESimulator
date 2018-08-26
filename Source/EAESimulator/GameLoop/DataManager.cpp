@@ -3,8 +3,7 @@
 #include "DataManager.h"
 
 
-
-DataManager::DataManager()
+UDataManager::UDataManager()
 {
 	m_CoreValues.Money = 10000;
 	m_CoreValues.Development = 300;
@@ -12,10 +11,11 @@ DataManager::DataManager()
 	m_CoreValues.Reputation = 500;
 }
 
-DataManager::~DataManager()
+UDataManager::~UDataManager()
 {
 }
 
-void DataManager::Update()
+void UDataManager::Update()
 {
 }
+

@@ -1,18 +1,20 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Calendar.h"
+#include "TimeManager.h"
 
-Calendar::Calendar()
+
+
+UTimeManager::UTimeManager()
 {
 	m_Year = 18;
 	m_Month = 8;
 	m_Day = 13;
 }
 
-Calendar::~Calendar()
+UTimeManager::~UTimeManager()
 {
 }
 
-void Calendar::Update()
+void UTimeManager::Update()
 {
 }

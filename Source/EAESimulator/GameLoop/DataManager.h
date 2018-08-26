@@ -2,10 +2,11 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
-#include <memory>
 #include "Tools/Singleton.h"
-using namespace std;
+
+#include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "DataManager.generated.h"
 
 /**
  * 
@@ -19,11 +20,14 @@ struct CoreValues
 	int Reputation;
 };
 
-class EAESIMULATOR_API DataManager : public Singleton<DataManager>
+UCLASS()
+class EAESIMULATOR_API UDataManager : public UObject, public Singleton<UDataManager>
 {
+	GENERATED_BODY()
+	
 public:
-	DataManager();
-	~DataManager();
+	UDataManager();
+	~UDataManager();
 
 	void Update();
 
@@ -32,4 +36,6 @@ public:
 private:
 
 	CoreValues m_CoreValues;
+	
+	
 };

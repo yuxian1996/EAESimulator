@@ -2,17 +2,22 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "Tools/Singleton.h"
+#include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "TimeManager.generated.h"
 
 /**
  * 
  */
-class EAESIMULATOR_API Calendar : public Singleton<Calendar>
+UCLASS()
+class EAESIMULATOR_API UTimeManager : public UObject, public Singleton<UTimeManager>
 {
+	GENERATED_BODY()
+	
 public:
-	Calendar();
-	~Calendar();
+	UTimeManager();
+	~UTimeManager();
 
 	inline int  GetTotalTime() { return m_TotalTime; }
 	inline void SetTotalTime(int i_TotalTime) { m_TotalTime = i_TotalTime; }
@@ -34,4 +39,6 @@ private:
 	int m_Year;
 	int m_Month;
 	int m_Day;
+	
+	
 };

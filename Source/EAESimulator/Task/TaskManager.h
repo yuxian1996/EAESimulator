@@ -1,20 +1,23 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-
-#include "CoreMinimal.h"
 #include "Tools/Singleton.h"
 #include "Task/Task.h"
+#include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "TaskManager.generated.h"
 
-using namespace std;
 /**
  * 
  */
-class EAESIMULATOR_API TaskManager : public Singleton<TaskManager>
+UCLASS()
+class EAESIMULATOR_API UTaskManager : public UObject, public Singleton<UTaskManager>
 {
+	GENERATED_BODY()
+	
 public:
-	TaskManager();
-	~TaskManager();
+	UTaskManager();
+	~UTaskManager();
 
 	void CheckTasks();
 
@@ -23,4 +26,6 @@ public:
 private:
 
 	TArray<Task*> m_TaskGroup;
+	
+	
 };

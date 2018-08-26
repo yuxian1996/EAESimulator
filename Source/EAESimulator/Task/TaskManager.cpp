@@ -2,14 +2,16 @@
 
 #include "TaskManager.h"
 
-TaskManager::TaskManager()
+
+UTaskManager::UTaskManager()
 {
 }
 
-TaskManager::~TaskManager()
+UTaskManager::~UTaskManager()
 {
 }
 
-void TaskManager::CheckTasks()
+void UTaskManager::CheckTasks()
 {
 }
+
