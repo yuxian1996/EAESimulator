@@ -11,3 +11,7 @@ DataManager::DataManager()
 DataManager::~DataManager()
 {
 }
+
+void DataManager::Update()
+{
+}

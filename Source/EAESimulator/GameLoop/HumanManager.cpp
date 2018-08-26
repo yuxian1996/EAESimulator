@@ -9,3 +9,7 @@ HumanManager::HumanManager()
 HumanManager::~HumanManager()
 {
 }
+
+void HumanManager::Update()
+{
+}

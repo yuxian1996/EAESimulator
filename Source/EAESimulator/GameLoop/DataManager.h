@@ -24,12 +24,12 @@ class EAESIMULATOR_API DataManager : public Singleton<DataManager>
 public:
 	DataManager();
 	~DataManager();
-	//static DataManager* Inctance();
+
+	void Update();
 
 	inline CoreValues& GetCoreValues() { return m_CoreValues; }
 
 private:
 
 	CoreValues m_CoreValues;
-	//static unique_ptr<DataManager> m_Instance;
 };

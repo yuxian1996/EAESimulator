@@ -23,6 +23,8 @@ public:
 	vector<Professor*>&	GetProfessorGroup() { return m_ProfessorGroup; }
 	vector<Stuff*>&		GetStuffGroup() { return m_StuffGroup; }
 
+	void Update();
+
 private:
 
 	vector<Student*>	m_StudentGroup;
