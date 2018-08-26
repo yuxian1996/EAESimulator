@@ -10,7 +10,7 @@ using namespace std;
 /**
  * 
  */
-class EAESIMULATOR_API Student : public Person
+class EAESIMULATOR_API Student : public UPerson
 {
 public:
 	Student();

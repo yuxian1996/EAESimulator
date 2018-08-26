@@ -3,7 +3,7 @@
 #include "Stuff.h"
 
 Stuff::Stuff():
-	Person()
+	UPerson()
 {
 	m_Ability = -80;
 }

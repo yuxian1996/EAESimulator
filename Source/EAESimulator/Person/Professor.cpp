@@ -3,7 +3,7 @@
 #include "Professor.h"
 
 Professor::Professor():
-	Person()
+	UPerson()
 {
 }
 

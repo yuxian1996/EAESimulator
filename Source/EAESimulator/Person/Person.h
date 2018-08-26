@@ -1,15 +1,17 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-
-#include "CoreMinimal.h"
 #include <string>
+#include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "Person.generated.h"
+
 
 using namespace std;
-
 /**
  * 
  */
+
 struct Capacity
 {
 	float Product;
@@ -18,12 +20,17 @@ struct Capacity
 	float TechArt;
 };
 
-class EAESIMULATOR_API Person
+
+
+UCLASS()
+class EAESIMULATOR_API UPerson : public UObject
 {
+	GENERATED_BODY()
+	
 public:
-	Person();
-	Person(string& i_Name, string& i_Description, Capacity& i_Capacity);
-	~Person();
+	UPerson();
+	UPerson(string& i_Name, string& i_Description, Capacity& i_Capacity);
+	~UPerson();
 
 	inline string&		GetName() { return m_Name; }
 	inline void			SetName(const string & i_Name) { m_Name = i_Name; }
@@ -36,10 +43,9 @@ public:
 protected:
 	string   m_Name;
 	string   m_Description;
-	Capacity m_Capacity;	
+	Capacity m_Capacity;
 
 private:
-
-
+	
 	
 };

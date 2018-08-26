@@ -2,7 +2,9 @@
 
 #include "Person.h"
 
-Person::Person()
+
+
+UPerson::UPerson()
 {
 	m_Name = "Yuxian Deng";
 	m_Description = "SB";
@@ -12,13 +14,13 @@ Person::Person()
 	m_Capacity.TechArt = -60;
 }
 
-Person::Person(string & i_Name, string & i_Description, Capacity & i_Capacity):
+UPerson::UPerson(string & i_Name, string & i_Description, Capacity & i_Capacity) :
 	m_Description(i_Description),
 	m_Name(i_Description),
 	m_Capacity(i_Capacity)
 {
 }
 
-Person::~Person()
+UPerson::~UPerson()
 {
 }

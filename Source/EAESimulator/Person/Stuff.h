@@ -9,7 +9,7 @@ using namespace std;
 /**
  * 
  */
-class EAESIMULATOR_API Stuff : public Person
+class EAESIMULATOR_API Stuff : public UPerson
 {
 public:
 	Stuff();
