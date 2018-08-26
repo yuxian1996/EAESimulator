@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "Tools/Singleton.h"
-#include <vector>
 #include "Person/Student.h"
 #include "Person/Professor.h"
 #include "Person/Stuff.h"
@@ -19,16 +18,16 @@ public:
 	HumanManager();
 	~HumanManager();
 
-	vector<Student*>&	GetStudentGroup() { return m_StudentGroup; }
-	vector<Professor*>&	GetProfessorGroup() { return m_ProfessorGroup; }
-	vector<Stuff*>&		GetStuffGroup() { return m_StuffGroup; }
+	TArray<Student*>&	GetStudentGroup() { return m_StudentGroup; }
+	TArray<Professor*>&	GetProfessorGroup() { return m_ProfessorGroup; }
+	TArray<Stuff*>&		GetStuffGroup() { return m_StuffGroup; }
 
 	void Update();
 
 private:
 
-	vector<Student*>	m_StudentGroup;
-	vector<Professor*>	m_ProfessorGroup;
-	vector<Stuff*>		m_StuffGroup;
+	TArray<Student*>	m_StudentGroup;
+	TArray<Professor*>	m_ProfessorGroup;
+	TArray<Stuff*>		m_StuffGroup;
 
 };

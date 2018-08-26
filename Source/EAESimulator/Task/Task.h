@@ -5,7 +5,6 @@
 #include "CoreMinimal.h"
 #include "Person/Person.h"
 
-#include <vector>
 #include <string>
 using namespace std;
 
@@ -16,10 +15,10 @@ class EAESIMULATOR_API Task
 {
 public:
 	Task();
-	Task(vector<Person*> i_PersonGroup, int i_CostTime, string& i_Name, string & i_Description);
+	Task(TArray<Person*> i_PersonGroup, int i_CostTime, string& i_Name, string & i_Description);
 	~Task();
 
-	inline vector<Person*> GetPersonGroup() { return m_PersonGroup; }
+	inline TArray<Person*> GetPersonGroup() { return m_PersonGroup; }
 
 	inline int	GetCostTime() { return m_CostTime; }
 	inline void SetCostTime(int i_CostTime) { m_CostTime = i_CostTime; }
@@ -29,7 +28,7 @@ public:
 
 private:
 
-	vector<Person*> m_PersonGroup;
+	TArray<Person*> m_PersonGroup;
 	int				m_CostTime;
 	string			m_Name;
 	string			m_Description;

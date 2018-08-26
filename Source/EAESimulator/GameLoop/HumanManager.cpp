@@ -5,13 +5,13 @@
 HumanManager::HumanManager()
 {
 	Student* s = new Student();
-	m_StudentGroup.push_back(s);
+	m_StudentGroup.Add(s);
 
 	Professor* p = new Professor();
-	m_ProfessorGroup.push_back(p);
+	m_ProfessorGroup.Add(p);
 
 	Stuff* sf = new Stuff();
-	m_StuffGroup.push_back(sf);
+	m_StuffGroup.Add(sf);
 }
 
 HumanManager::~HumanManager()

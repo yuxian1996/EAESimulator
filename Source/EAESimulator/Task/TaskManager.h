@@ -5,7 +5,6 @@
 #include "CoreMinimal.h"
 #include "Tools/Singleton.h"
 #include "Task/Task.h"
-#include <vector>
 
 using namespace std;
 /**
@@ -19,9 +18,9 @@ public:
 
 	void CheckTasks();
 
-	inline vector<Task*> GetTaskGroup() { return m_TaskGroup; }
+	inline TArray<Task*> GetTaskGroup() { return m_TaskGroup; }
 
 private:
 
-	vector<Task*> m_TaskGroup;
+	TArray<Task*> m_TaskGroup;
 };

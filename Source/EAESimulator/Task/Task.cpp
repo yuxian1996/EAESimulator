@@ -4,9 +4,11 @@
 
 Task::Task()
 {
+
+
 }
 
-Task::Task(vector<Person*> i_PersonGroup, int i_CostTime, string& i_Name, string & i_Description):
+Task::Task(TArray<Person*> i_PersonGroup, int i_CostTime, string& i_Name, string & i_Description):
 	m_PersonGroup(i_PersonGroup),
 	m_CostTime(i_CostTime),
 	m_Name(i_Name),
