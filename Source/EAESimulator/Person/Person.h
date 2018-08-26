@@ -13,10 +13,10 @@ using namespace std;
  */
 struct Capacity
 {
-	int Product;
-	int Program;
-	int Art;
-	int TechArt;
+	float Product;
+	float Program;
+	float Art;
+	float TechArt;
 };
 
 class EAESIMULATOR_API Person

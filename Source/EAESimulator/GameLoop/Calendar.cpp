@@ -4,6 +4,9 @@
 
 Calendar::Calendar()
 {
+	m_Year = 18;
+	m_Month = 8;
+	m_Day = 13;
 }
 
 Calendar::~Calendar()

@@ -2,8 +2,10 @@
 
 #include "Stuff.h"
 
-Stuff::Stuff()
+Stuff::Stuff():
+	Person()
 {
+	m_Ability = -80;
 }
 
 Stuff::~Stuff()
