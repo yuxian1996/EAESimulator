@@ -2,10 +2,8 @@
 
 #pragma once
 
-#include "Tools/Singleton.h"
-
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+#include "Engine/GameInstance.h"
 #include "DataManager.generated.h"
 
 /**
@@ -21,7 +19,7 @@ struct CoreValues
 };
 
 UCLASS()
-class EAESIMULATOR_API UDataManager : public UObject, public Singleton<UDataManager>
+class EAESIMULATOR_API UDataManager : public UGameInstance
 {
 	GENERATED_BODY()
 	
