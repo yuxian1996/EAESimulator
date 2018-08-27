@@ -1,6 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
+#include "GameLoop/DataManager.h"
+#include "GameLoop/HumanManager.h"
+#include "GameLoop/TimeManager.h"
+#include "Task/TaskManager.h"
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
@@ -15,6 +19,10 @@ class EAESIMULATOR_API AGameLoop : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AGameLoop();
+	UDataManager*  DataMgr;
+	UHumanManager* HumanMgr;
+	UTimeManager*  TimeMgr;
+	UTaskManager*  TaskMgr;
 
 protected:
 	// Called when the game starts or when spawned

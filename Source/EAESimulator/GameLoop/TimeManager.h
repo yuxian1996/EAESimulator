@@ -3,17 +3,16 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Engine/GameInstance.h"
+#include "UObject/NoExportTypes.h"
 #include "TimeManager.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class EAESIMULATOR_API UTimeManager : public UGameInstance
+class EAESIMULATOR_API UTimeManager : public UObject
 {
 	GENERATED_BODY()
-	
 	
 public:
 	UTimeManager();
@@ -39,6 +38,6 @@ private:
 	int m_Year;
 	int m_Month;
 	int m_Day;
-
+	
 	
 };

@@ -3,14 +3,14 @@
 #pragma once
 #include "Task/Task.h"
 #include "CoreMinimal.h"
-#include "Engine/GameInstance.h"
+#include "UObject/NoExportTypes.h"
 #include "TaskManager.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class EAESIMULATOR_API UTaskManager : public UGameInstance
+class EAESIMULATOR_API UTaskManager : public UObject
 {
 	GENERATED_BODY()
 	
@@ -25,6 +25,7 @@ public:
 private:
 
 	TArray<Task*> m_TaskGroup;
+
 	
 	
 };

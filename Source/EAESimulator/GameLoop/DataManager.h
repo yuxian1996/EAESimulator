@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Engine/GameInstance.h"
+#include "UObject/NoExportTypes.h"
 #include "DataManager.generated.h"
 
 /**
@@ -19,7 +19,7 @@ struct CoreValues
 };
 
 UCLASS()
-class EAESIMULATOR_API UDataManager : public UGameInstance
+class EAESIMULATOR_API UDataManager : public UObject
 {
 	GENERATED_BODY()
 	
@@ -33,7 +33,6 @@ public:
 
 private:
 
-	CoreValues m_CoreValues;
-	
+	CoreValues m_CoreValues;	
 	
 };

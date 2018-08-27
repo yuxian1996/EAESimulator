@@ -2,8 +2,6 @@
 
 #include "DataManager.h"
 
-
-
 UDataManager::UDataManager()
 {
 	m_CoreValues.Money = 10000;
@@ -19,3 +17,4 @@ UDataManager::~UDataManager()
 void UDataManager::Update()
 {
 }
+

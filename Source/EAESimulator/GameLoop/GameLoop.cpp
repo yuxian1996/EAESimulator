@@ -9,6 +9,11 @@ AGameLoop::AGameLoop()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	DataMgr  = NewObject<UDataManager>();
+	HumanMgr = NewObject<UHumanManager>();
+	TimeMgr  = NewObject<UTimeManager>();
+	TaskMgr  = NewObject<UTaskManager>();
+
 }
 
 // Called when the game starts or when spawned

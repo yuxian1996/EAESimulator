@@ -2,8 +2,6 @@
 
 #include "HumanManager.h"
 
-
-
 UHumanManager::UHumanManager()
 {
 	UStudent* s = NewObject<UStudent>();
@@ -23,3 +21,5 @@ UHumanManager::~UHumanManager()
 void UHumanManager::Update()
 {
 }
+
+

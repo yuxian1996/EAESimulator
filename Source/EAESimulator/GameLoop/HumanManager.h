@@ -5,14 +5,14 @@
 #include "Person/Professor.h"
 #include "Person/Stuff.h"
 #include "CoreMinimal.h"
-#include "Engine/GameInstance.h"
+#include "UObject/NoExportTypes.h"
 #include "HumanManager.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class EAESIMULATOR_API UHumanManager : public UGameInstance
+class EAESIMULATOR_API UHumanManager : public UObject
 {
 	GENERATED_BODY()
 	

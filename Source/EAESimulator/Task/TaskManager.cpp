@@ -2,7 +2,6 @@
 
 #include "TaskManager.h"
 
-
 UTaskManager::UTaskManager()
 {
 }
@@ -14,5 +13,3 @@ UTaskManager::~UTaskManager()
 void UTaskManager::CheckTasks()
 {
 }
-
-
