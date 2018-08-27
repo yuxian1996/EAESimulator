@@ -19,6 +19,25 @@ class EAESIMULATOR_API AGameLoop : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AGameLoop();
+
+	UFUNCTION(BlueprintPure, Category="Mgr")
+		UDataManager*  GetDataMgr() {
+		return DataMgr;
+	}
+
+	UFUNCTION(BlueprintPure, Category = "Mgr")
+		UHumanManager*  GetHumanMgr() {
+		return HumanMgr;
+	}
+	UFUNCTION(BlueprintPure, Category = "Mgr")
+		UTimeManager*  GetTimeMgr() {
+		return TimeMgr;
+	}
+	UFUNCTION(BlueprintPure, Category = "Mgr")
+		UTaskManager*  GetTaskMgr() {
+		return TaskMgr;
+	}
+
 	UDataManager*  DataMgr;
 	UHumanManager* HumanMgr;
 	UTimeManager*  TimeMgr;

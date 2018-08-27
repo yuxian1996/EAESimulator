@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Blueprintable)
 class EAESIMULATOR_API UTimeManager : public UObject
 {
 	GENERATED_BODY()

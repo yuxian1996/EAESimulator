@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Blueprintable)
 class EAESIMULATOR_API UTaskManager : public UObject
 {
 	GENERATED_BODY()

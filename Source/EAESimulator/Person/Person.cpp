@@ -14,9 +14,9 @@ UPerson::UPerson()
 	m_Capacity.TechArt = -60;
 }
 
-UPerson::UPerson(string & i_Name, string & i_Description, Capacity & i_Capacity) :
+UPerson::UPerson(FString & i_Name, FString & i_Description, FCapacity & i_Capacity) :
+	m_Name(i_Name),
 	m_Description(i_Description),
-	m_Name(i_Description),
 	m_Capacity(i_Capacity)
 {
 }

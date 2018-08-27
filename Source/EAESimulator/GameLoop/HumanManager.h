@@ -11,7 +11,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Blueprintable)
 class EAESIMULATOR_API UHumanManager : public UObject
 {
 	GENERATED_BODY()
@@ -20,6 +20,7 @@ public:
 	UHumanManager();
 	~UHumanManager();
 
+	UFUNCTION(BlueprintPure, Category = "Human")
 	TArray<UStudent*>&	GetStudentGroup() { return m_StudentGroup; }
 	TArray<UProfessor*>&	GetProfessorGroup() { return m_ProfessorGroup; }
 	TArray<UStuff*>&		GetStuffGroup() { return m_StuffGroup; }

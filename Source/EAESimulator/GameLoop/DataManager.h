@@ -18,7 +18,7 @@ struct CoreValues
 	int Reputation;
 };
 
-UCLASS()
+UCLASS(Blueprintable)
 class EAESIMULATOR_API UDataManager : public UObject
 {
 	GENERATED_BODY()

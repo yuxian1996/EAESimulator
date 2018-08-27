@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Blueprintable)
 class EAESIMULATOR_API UStudent : public UPerson
 {
 	GENERATED_BODY()

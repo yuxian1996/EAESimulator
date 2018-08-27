@@ -11,9 +11,11 @@ using namespace std;
 /**
  * 
  */
-
-struct Capacity
+USTRUCT(Blueprintable)
+struct FCapacity
 {
+	GENERATED_BODY()
+
 	float Product;
 	float Program;
 	float Art;
@@ -22,28 +24,31 @@ struct Capacity
 
 
 
-UCLASS()
+UCLASS(Blueprintable)
 class EAESIMULATOR_API UPerson : public UObject
 {
 	GENERATED_BODY()
 	
 public:
 	UPerson();
-	UPerson(string& i_Name, string& i_Description, Capacity& i_Capacity);
+	UPerson(FString& i_Name, FString& i_Description, FCapacity& i_Capacity);
 	~UPerson();
 
-	inline string&		GetName() { return m_Name; }
-	inline void			SetName(const string & i_Name) { m_Name = i_Name; }
+	UFUNCTION(BlueprintPure, Category="Person")
+	inline FString		GetName() const { return m_Name; }
+	inline void			SetName(const FString & i_Name) { m_Name = i_Name; }
 
-	inline Capacity&	GetCapacity() { return m_Capacity; }
+	UFUNCTION(BlueprintPure, Category = "Person")
+	inline FCapacity	GetCapacity() const { return m_Capacity; }
 
-	inline string&		GetDescription() { return m_Description; }
-	inline void			SetDescription(const string & i_Description) { m_Description = i_Description; }
+	UFUNCTION(BlueprintPure, Category = "Person")
+	inline FString		GetDescription() const { return m_Description; }
+	inline void			SetDescription(const FString & i_Description) { m_Description = i_Description; }
 
 protected:
-	string   m_Name;
-	string   m_Description;
-	Capacity m_Capacity;
+	FString   m_Name;
+	FString   m_Description;
+	FCapacity m_Capacity;
 
 private:
 	

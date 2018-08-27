@@ -4,6 +4,7 @@
 
 UHumanManager::UHumanManager()
 {
+	
 	UStudent* s = NewObject<UStudent>();
 	m_StudentGroup.Add(s);
 
