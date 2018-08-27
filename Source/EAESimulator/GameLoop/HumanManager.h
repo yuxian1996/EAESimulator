@@ -1,21 +1,18 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-#include "Tools/Singleton.h"
 #include "Person/Student.h"
 #include "Person/Professor.h"
 #include "Person/Stuff.h"
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+#include "Engine/GameInstance.h"
 #include "HumanManager.generated.h"
-
-
 
 /**
  * 
  */
 UCLASS()
-class EAESIMULATOR_API UHumanManager : public UObject, public Singleton<UHumanManager>
+class EAESIMULATOR_API UHumanManager : public UGameInstance
 {
 	GENERATED_BODY()
 	
@@ -33,6 +30,7 @@ private:
 
 	TArray<UStudent*>	m_StudentGroup;
 	TArray<UProfessor*>	m_ProfessorGroup;
-	TArray<UStuff*>		m_StuffGroup;	
+	TArray<UStuff*>		m_StuffGroup;
+	
 	
 };
