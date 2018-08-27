@@ -16,9 +16,13 @@ struct FCapacity
 {
 	GENERATED_BODY()
 
+	UPROPERTY(BlueprintReadWrite)
 	float Product;
+	UPROPERTY(BlueprintReadWrite)
 	float Program;
+	UPROPERTY(BlueprintReadWrite)
 	float Art;
+	UPROPERTY(BlueprintReadWrite)
 	float TechArt;
 };
 
