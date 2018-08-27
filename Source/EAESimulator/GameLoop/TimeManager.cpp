@@ -3,7 +3,6 @@
 #include "TimeManager.h"
 
 
-
 UTimeManager::UTimeManager()
 {
 	m_Year = 18;
@@ -18,3 +17,4 @@ UTimeManager::~UTimeManager()
 void UTimeManager::Update()
 {
 }
+

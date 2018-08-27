@@ -2,18 +2,18 @@
 
 #pragma once
 
-#include "Tools/Singleton.h"
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+#include "Engine/GameInstance.h"
 #include "TimeManager.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class EAESIMULATOR_API UTimeManager : public UObject, public Singleton<UTimeManager>
+class EAESIMULATOR_API UTimeManager : public UGameInstance
 {
 	GENERATED_BODY()
+	
 	
 public:
 	UTimeManager();
@@ -39,6 +39,6 @@ private:
 	int m_Year;
 	int m_Month;
 	int m_Day;
-	
+
 	
 };
