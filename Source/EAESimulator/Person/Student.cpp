@@ -3,5 +3,12 @@
 #include "Student.h"
 
 
+UStudent::UStudent() :
+	UPerson()
+{
+}
 
+UStudent::~UStudent()
+{
+}
 

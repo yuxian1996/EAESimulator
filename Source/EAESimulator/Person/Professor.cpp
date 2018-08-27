@@ -2,6 +2,14 @@
 
 #include "Professor.h"
 
+UProfessor::UProfessor() :
+	UPerson()
+{
+}
+
+UProfessor::~UProfessor()
+{
+}
 
 
 

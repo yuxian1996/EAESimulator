@@ -14,7 +14,9 @@ class EAESIMULATOR_API UProfessor : public UPerson
 {
 	GENERATED_BODY()
 	
-	
+public:
+	UProfessor();
+	~UProfessor();
 	
 	
 };

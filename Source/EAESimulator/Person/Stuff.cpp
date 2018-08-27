@@ -2,6 +2,15 @@
 
 #include "Stuff.h"
 
+UStuff::UStuff() :
+	UPerson()
+{
+	m_Ability = -80;
+}
+
+UStuff::~UStuff()
+{
+}
 
 
 
