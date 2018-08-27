@@ -4,15 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "Person/Person.h"
-#include <string>
-using namespace std;
+#include "Student.generated.h"
 
 /**
  * 
  */
-class EAESIMULATOR_API Student : public UPerson
+UCLASS()
+class EAESIMULATOR_API UStudent : public UPerson
 {
-public:
-	Student();
-	~Student();
+	GENERATED_BODY()
+	
+	
+	
+	
 };

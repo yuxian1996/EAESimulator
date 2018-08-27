@@ -2,12 +2,6 @@
 
 #include "Stuff.h"
 
-Stuff::Stuff():
-	UPerson()
-{
-	m_Ability = -80;
-}
 
-Stuff::~Stuff()
-{
-}
+
+

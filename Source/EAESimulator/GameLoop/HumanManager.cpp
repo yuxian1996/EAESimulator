@@ -4,13 +4,13 @@
 
 UHumanManager::UHumanManager()
 {
-	Student* s = NewObject<Student>();
+	UStudent* s = NewObject<UStudent>();
 	m_StudentGroup.Add(s);
 
-	Professor* p = NewObject<Professor>();
+	UProfessor* p = NewObject<UProfessor>();
 	m_ProfessorGroup.Add(p);
 
-	Stuff* sf = NewObject<Stuff>();
+	UStuff* sf = NewObject<UStuff>();
 	m_StuffGroup.Add(sf);
 }
 

@@ -2,11 +2,6 @@
 
 #include "Student.h"
 
-Student::Student():
-	UPerson()
-{
-}
 
-Student::~Student()
-{
-}
+
+

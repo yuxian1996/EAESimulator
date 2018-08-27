@@ -4,20 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "Person/Person.h"
-#include <string>
-using namespace std;
+#include "Stuff.generated.h"
+
 /**
  * 
  */
-class EAESIMULATOR_API Stuff : public UPerson
+UCLASS()
+class EAESIMULATOR_API UStuff : public UPerson
 {
-public:
-	Stuff();
-	~Stuff();
-
-	inline int  GetAbility() { return m_Ability; }
-	inline void SetAbility(int i_Ability) { m_Ability = i_Ability; }
-
-private:
-	int m_Ability;
+	GENERATED_BODY()
+	
+	
+	
+	
 };

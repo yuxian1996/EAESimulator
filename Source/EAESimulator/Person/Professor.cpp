@@ -2,11 +2,6 @@
 
 #include "Professor.h"
 
-Professor::Professor():
-	UPerson()
-{
-}
 
-Professor::~Professor()
-{
-}
+
+

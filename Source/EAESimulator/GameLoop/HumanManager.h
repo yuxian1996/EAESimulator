@@ -23,16 +23,16 @@ public:
 	UHumanManager();
 	~UHumanManager();
 
-	TArray<Student*>&	GetStudentGroup() { return m_StudentGroup; }
-	TArray<Professor*>&	GetProfessorGroup() { return m_ProfessorGroup; }
-	TArray<Stuff*>&		GetStuffGroup() { return m_StuffGroup; }
+	TArray<UStudent*>&	GetStudentGroup() { return m_StudentGroup; }
+	TArray<UProfessor*>&	GetProfessorGroup() { return m_ProfessorGroup; }
+	TArray<UStuff*>&		GetStuffGroup() { return m_StuffGroup; }
 
 	void Update();
 
 private:
 
-	TArray<Student*>	m_StudentGroup;
-	TArray<Professor*>	m_ProfessorGroup;
-	TArray<Stuff*>		m_StuffGroup;	
+	TArray<UStudent*>	m_StudentGroup;
+	TArray<UProfessor*>	m_ProfessorGroup;
+	TArray<UStuff*>		m_StuffGroup;	
 	
 };
