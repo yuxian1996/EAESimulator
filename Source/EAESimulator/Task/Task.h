@@ -23,17 +23,28 @@ public:
 
 	inline TArray<UPerson*> GetPersonGroup() { return m_PersonGroup; }
 
-	inline int	GetCostTime() { return m_CostTime; }
-	inline void SetCostTime(int i_CostTime) { m_CostTime = i_CostTime; }
+	UFUNCTION(BlueprintPure)
+	inline int	GetCostTime() const { return m_CostTime; }
+	UFUNCTION(BlueprintCallable)
+	void SetCostTime(int i_CostTime) { m_CostTime = i_CostTime; }
 
-	inline FString& GetDescription() { return m_Description; }
-	inline void    SetDescription(FString const i_Description) { m_Description = i_Description; }
+	UFUNCTION(BlueprintPure)
+	inline FString GetDescription() const { return m_Description; }
+	UFUNCTION(BlueprintCallable)
+	void    SetDescription(const FString& i_Description) { m_Description = i_Description; }
+
+	UFUNCTION(BlueprintPure)
+	inline int	GetEarnMoney() const { return m_EarnMoney; }
+	UFUNCTION(BlueprintCallable)
+	void SetEarnMoney(int i_EarnMoney) { m_EarnMoney = i_EarnMoney; }
 
 private:
 
 	TArray<UPerson*> m_PersonGroup;
 	int				m_CostTime;
-	FString			m_Name;
+	FString			m_Name;                   
 	FString			m_Description;
+	int				m_EarnMoney;
+
 	
 };
