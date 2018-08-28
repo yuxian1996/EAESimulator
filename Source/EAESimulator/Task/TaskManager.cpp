@@ -4,6 +4,11 @@
 
 UTaskManager::UTaskManager()
 {
+	UTask* t = NewObject<UTask>();
+	t->SetCostTime(7);
+	t->SetDescription(FString("Kill Mi Chen"));
+	m_TaskGroup.Add(t);
+
 }
 
 UTaskManager::~UTaskManager()
