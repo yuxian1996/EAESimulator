@@ -18,17 +18,25 @@ public:
 	UTimeManager();
 	~UTimeManager();
 
-	inline int  GetTotalTime() { return m_TotalTime; }
-	inline void SetTotalTime(int i_TotalTime) { m_TotalTime = i_TotalTime; }
+	UFUNCTION(BlueprintPure)
+	FORCEINLINE int  GetTotalTime() { return m_TotalTime; }
+	UFUNCTION(BlueprintCallable)
+	void SetTotalTime(int i_TotalTime) { m_TotalTime = i_TotalTime; }
 
-	inline int	GetYear() { return m_Year; }
-	inline void SetYear(int i_Year) { m_Year = i_Year; }
+	UFUNCTION(BlueprintPure)
+	FORCEINLINE int	GetYear() { return m_Year; }
+	UFUNCTION(BlueprintCallable)
+	void SetYear(int i_Year) { m_Year = i_Year; }
 
-	inline int	GetMonth() { return m_Month; }
-	inline void SetMonth(int i_Month) { m_Month = i_Month; }
+	UFUNCTION(BlueprintPure)
+	FORCEINLINE int	GetMonth() { return m_Month; }
+	UFUNCTION(BlueprintCallable)
+	 void SetMonth(int i_Month) { m_Month = i_Month; }
 
-	inline int	GetDay() { return m_Day; }
-	inline void	SetDay(int i_Day) { m_Day = i_Day; }
+	UFUNCTION(BlueprintPure)
+	FORCEINLINE int	GetDay() { return m_Day; }
+	UFUNCTION(BlueprintCallable)
+	 void	SetDay(int i_Day) { m_Day = i_Day; }
 
 	void Update();
 

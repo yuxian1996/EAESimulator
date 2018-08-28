@@ -1,9 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-#include "Task/Task.h"
+//#include "Task/Task.h"
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
+#include "Task/Task.h"
 #include "TaskManager.generated.h"
 
 /**
@@ -20,11 +21,12 @@ public:
 
 	void CheckTasks();
 
-	inline TArray<Task*> GetTaskGroup() { return m_TaskGroup; }
+	UFUNCTION(BlueprintPure)
+	TArray<UTask*>& GetTaskGroup() { return m_TaskGroup; }
 
 private:
 
-	TArray<Task*> m_TaskGroup;
+	TArray<UTask*> m_TaskGroup;
 
 	
 	

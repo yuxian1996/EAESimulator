@@ -3,7 +3,6 @@
 #include "Person.h"
 
 
-
 UPerson::UPerson()
 {
 	m_Name = "John Doe";
