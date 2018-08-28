@@ -9,13 +9,18 @@
 /**
  * 
  */
-
-USTRUCT()
+USTRUCT(Blueprintable)
 struct FCoreValues
 {
+	GENERATED_BODY()
+
+	UPROPERTY(BlueprintReadWrite)
 	int Money;
+	UPROPERTY(BlueprintReadWrite)
 	int Happiness;
+	UPROPERTY(BlueprintReadWrite)
 	int Development;
+	UPROPERTY(BlueprintReadWrite)
 	int Reputation;
 };
 
@@ -30,10 +35,11 @@ public:
 
 	void Update();
 
-	inline CoreValues& GetCoreValues() { return m_CoreValues; }
+	UFUNCTION(BlueprintPure)
+	FCoreValues GetCoreValues() { return m_CoreValues; }
 
 private:
 
-	CoreValues m_CoreValues;	
+	FCoreValues m_CoreValues;	
 	
 };
