@@ -10,7 +10,8 @@
  * 
  */
 
-struct CoreValues
+USTRUCT()
+struct FCoreValues
 {
 	int Money;
 	int Happiness;
