@@ -36,5 +36,5 @@ private:
 
 	static FString names[8];
 	static FString descriptions[8];
-	
+	static FString AvatarPath;
 };

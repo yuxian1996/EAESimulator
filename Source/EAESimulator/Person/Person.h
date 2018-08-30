@@ -4,6 +4,7 @@
 #include <string>
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
+#include "Classes/Engine/Texture2D.h"
 #include "Person.generated.h"
 
 
@@ -52,10 +53,17 @@ public:
 	inline FString		GetDescription() const { return m_Description; }
 	inline void			SetDescription(const FString & i_Description) { m_Description = i_Description; }
 
+	UFUNCTION(BlueprintPure, Category = "Person")
+	inline UTexture2D*		GetAvatar() const { return m_Avatar; }
+	inline void LoadAvatar(const FString filePath) {
+		m_Avatar = Cast<UTexture2D>(StaticLoadObject(UTexture2D::StaticClass(), NULL, *filePath));
+	};
+
 protected:
 	FString   m_Name;
 	FString   m_Description;
 	FCapacity m_Capacity;
+	UTexture2D* m_Avatar;
 	
 
 private:
