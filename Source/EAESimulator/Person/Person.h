@@ -44,6 +44,9 @@ public:
 
 	UFUNCTION(BlueprintPure, Category = "Person")
 	inline FCapacity	GetCapacity() const { return m_Capacity; }
+	inline void SetCapacity(const FCapacity& i_Capacity) {
+			m_Capacity = i_Capacity;
+	}
 
 	UFUNCTION(BlueprintPure, Category = "Person")
 	inline FString		GetDescription() const { return m_Description; }
@@ -53,6 +56,7 @@ protected:
 	FString   m_Name;
 	FString   m_Description;
 	FCapacity m_Capacity;
+	
 
 private:
 	
