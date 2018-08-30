@@ -6,7 +6,7 @@ UTaskManager::UTaskManager()
 {
 	UTask* t = NewObject<UTask>();
 	t->SetCostTime(7);
-	t->SetDescription(FString("Kill Mi Chen"));
+	t->SetDescription(FString("Instructor: Jose\nThe instructor will introduce some method \nand math model to build a battle system."));
 	m_TaskGroup.Add(t);
 
 }
