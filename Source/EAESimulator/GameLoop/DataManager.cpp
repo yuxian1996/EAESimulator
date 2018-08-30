@@ -4,10 +4,10 @@
 
 UDataManager::UDataManager()
 {
-	m_CoreValues.Money = 10000;
-	m_CoreValues.Development = 300;
-	m_CoreValues.Happiness = 400;
-	m_CoreValues.Reputation = 500;
+	m_CoreValues.Money = 100000;
+	m_CoreValues.Development = 200;
+	m_CoreValues.Happiness = 600;
+	m_CoreValues.Reputation = 100;
 }
 
 UDataManager::~UDataManager()
