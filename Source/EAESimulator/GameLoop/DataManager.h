@@ -38,6 +38,9 @@ public:
 	UFUNCTION(BlueprintPure)
 	FCoreValues GetCoreValues() { return m_CoreValues; }
 
+	UFUNCTION(BlueprintCallable)
+	void SetCoreValues(const FCoreValues& i_CoreValues) { m_CoreValues = i_CoreValues; }
+
 private:
 
 	FCoreValues m_CoreValues;	
