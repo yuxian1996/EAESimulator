@@ -6,7 +6,8 @@ UTaskManager::UTaskManager()
 {
 	UTask* t = NewObject<UTask>();
 	t->SetCostTime(7);
-	t->SetDescription(FString("Instructor: Jose\nThe instructor will introduce some method \nand math model to build a battle system."));
+	t->SetEarnMoney(5000);
+	t->SetDescription(FString("Visiting the Biozzard which is the most successful video game company in the world. Students will see how the team work together and listen to the lecture from the producer of Overshoot."));
 	m_TaskGroup.Add(t);
 
 }

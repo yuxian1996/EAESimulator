@@ -15,13 +15,13 @@ struct FCoreValues
 	GENERATED_BODY()
 
 	UPROPERTY(BlueprintReadWrite)
-	int Money;
+	float Money;
 	UPROPERTY(BlueprintReadWrite)
-	int Happiness;
+	float Happiness;
 	UPROPERTY(BlueprintReadWrite)
-	int Development;
+	float Development;
 	UPROPERTY(BlueprintReadWrite)
-	int Reputation;
+	float Reputation;
 };
 
 UCLASS(Blueprintable)
