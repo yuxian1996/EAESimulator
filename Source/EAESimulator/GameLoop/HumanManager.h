@@ -22,6 +22,7 @@ public:
 
 	UFUNCTION(BlueprintPure, Category = "Human")
 	TArray<UStudent*>&	GetStudentGroup() { return m_StudentGroup; }
+	UFUNCTION(BlueprintPure, Category = "Human")
 	TArray<UProfessor*>&	GetProfessorGroup() { return m_ProfessorGroup; }
 	TArray<UStuff*>&		GetStuffGroup() { return m_StuffGroup; }
 
@@ -32,6 +33,8 @@ private:
 	TArray<UStudent*>	m_StudentGroup;
 	TArray<UProfessor*>	m_ProfessorGroup;
 	TArray<UStuff*>		m_StuffGroup;
-	
+
+	static FString names[8];
+	static FString descriptions[8];
 	
 };
